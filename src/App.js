@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import AdsBar from "./components/AdsBar/AdsBar";
+import SubTopBar from "./components/SubTopBar/SubTopBar";
+import { AppBar } from "./components/AppBar/AppBar";
+import BottomNavbar from "./components/BottomNavbar/BottomNavbar";
+import { useState } from "react";
+import Category from "./components/SmallWidthCategory/Category";
+import Cart from "./components/Cart/Cart";
 
 function App() {
+  const [categoryOpen, setCategoryOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <AdsBar />
+      <SubTopBar />
+      <AppBar />
+     <Category categoryOpen={categoryOpen}/>
+      <BottomNavbar
+        categoryOpen={categoryOpen}
+        setCategoryOpen={setCategoryOpen}
+      />
+      <Routes>
+        <Route path="/" element={<Home categoryOpen={categoryOpen} />} />
+        <Route path="/cart" element={<Cart  />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

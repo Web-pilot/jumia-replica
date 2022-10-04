@@ -1,0 +1,8 @@
+.cart_container {
+    min-height: 50vh;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px -10px;
+    margin: 10px auto;
+}
