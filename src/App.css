@@ -5,6 +5,7 @@
 
 :root{
   --primary-color: rgb(228, 147, 24);
+  --light-primary-color: #f3dc9e;
   --secondary-color: rgb(18, 18, 184);
   --text-primary-color: white;
   --container-width: 1200px;
@@ -15,14 +16,34 @@
   --small-font-size: 12px;
   --border: 1px solid #ededed;
 }
+.btn {
+  background: var(--primary-color);
+  color:var(--text-primary-color);
+  cursor: pointer;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 7px;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%); 
+  display: inline-block;
+}
+.account_section_title {
+  border-bottom: var(--border);
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
 
+.btn:hover {
+  transform: scale(0.98)
+}
 a {
   text-decoration: none;
   color: inherit;
 }
 
 a:hover {
-  color: var(--primary-color);
   transition: 0.3s;
 }
 html {

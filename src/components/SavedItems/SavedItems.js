@@ -1,16 +1,16 @@
 import "./SavedItems.css";
-import OrderCard from "../SuccessOrdersCard/SuccessOrders";
 
+import AccountSidebar from "../AccountSideBar/AccountSidebar"
+import SavedItemsCard from "../SavedItemsCard/SavedItemsCard";
 const SavedItems = () => {
   return (
     <section className="container account_container">
       <AccountSidebar />
       <div className="main_content save_items">
-        <h4>Saved Items</h4>
-        
-        <OrderCard />
-        <OrderCard />
-        <OrderCard />
+        <h4 className="account_section_title">Saved Items</h4>
+        <SavedItemsCard />
+        <SavedItemsCard />
+        <SavedItemsCard />
       </div>
     </section>
   )

@@ -14,6 +14,7 @@ import Account from "./components/Account/Account";
 import Inbox from "./components/Inbox/Inbox";
 import Order from "./components/Order/Order";
 import SavedItems from "./components/SavedItems/SavedItems";
+import RecentlyViewItems from "./components/RecentlyViewItems/RecentlyViewItems";
 
 function App() {
   const [categoryOpen, setCategoryOpen] = useState(false);
@@ -37,6 +38,7 @@ function App() {
         <Route path="/customer/account/inbox" element={<Inbox  />} />
         <Route path="/customer/order/index" element={<Order  />} />
         <Route path="/customer/wishlist/index" element={<SavedItems  />} />
+        <Route path="/history/?product" element={<RecentlyViewItems  />} />
       </Routes>
     </BrowserRouter>
   );

@@ -37,11 +37,11 @@ const AccountSidebar = () => {
             <i>
               <BsHeart />
             </i>{" "}
-            Save Items
+            Saved Items
           </Link>
         </li>
         <li>
-          <Link to="">
+          <Link to="/history/?product=1">
             <i>
               <BiRevision />
             </i>{" "}
