@@ -11,6 +11,9 @@ import Cart from "./components/Cart/Cart";
 import ProductDetails from "./components/ProductDetailsPage/ProductDetails";
 import SignIn from "./components/Account/Login/SignIn";
 import Account from "./components/Account/Account";
+import Inbox from "./components/Inbox/Inbox";
+import Order from "./components/Order/Order";
+import SavedItems from "./components/SavedItems/SavedItems";
 
 function App() {
   const [categoryOpen, setCategoryOpen] = useState(false);
@@ -31,6 +34,9 @@ function App() {
         <Route path="/cart" element={<Cart  />} />
         <Route path="/product-name/:id" element={<ProductDetails  />} />
         <Route path="/customer/account" element={<Account  />} />
+        <Route path="/customer/account/inbox" element={<Inbox  />} />
+        <Route path="/customer/order/index" element={<Order  />} />
+        <Route path="/customer/wishlist/index" element={<SavedItems  />} />
       </Routes>
     </BrowserRouter>
   );

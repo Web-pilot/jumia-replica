@@ -3,44 +3,14 @@
     align-items: flex-start;
 }
 
-.side_bar, .main_content {
+.main_content {
     background: white;
     border: var(--border);
-}
-
-.side_bar {
-    flex: 1;
-    font-size:var(--small-font-size);
 }
 
 .main_content {
     flex: 5;
     margin-left: 10px;
-}
-
-.side_bar ul {
-    list-style: none;
-    padding: 0;
-    border-bottom: var(--border);
-}
-
-.side_bar ul li {
-    padding: 10px;
-}
-
-.side_bar ul li a {
-    display: flex;
-    align-items: center;
-}
-
-.side_bar ul li.active {
-    background: #f6f5f5;
-    font-weight: 600;
-}
-
-.side_bar ul li i {
-    font-size: 20px;
-    padding-right: 10px;
 }
 
 .log_out_btn {
