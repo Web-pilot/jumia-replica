@@ -78,8 +78,35 @@
 .user {
     background: var(--light-bg);
     cursor: pointer;
+    position: relative;
 }
 
+.dropdown {
+    position: absolute;
+    top: 35px;
+    min-width: 200px;
+    left: -30%;
+    background: var(--text-primary-color);
+    min-height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown ul {
+    padding: 0;
+    list-style: none;
+}
+
+.dropdown ul li {
+    padding: 10px;
+}
+.toparrow {
+    position: absolute;
+    top: -10%;
+    left: 20%;
+    font-size: 20px;
+    z-index: 10;
+}
 @media screen and (max-width: 768px) {
     .nav_left {
         justify-content: space-between;

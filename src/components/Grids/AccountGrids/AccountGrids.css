@@ -1,0 +1,23 @@
+.grid_items {
+    border: var(--border);
+    min-height: 200px;
+    padding: 10px;
+}
+
+.grid_items h5 {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-bottom: var(--border);
+    opacity: 0.8;
+}
+
+.grid_items .body {
+    margin-top: 10px;
+}
+
+.grid_items .body p{
+    margin: 10px 0;
+    font-size: 13px;
+}
+

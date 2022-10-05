@@ -2,7 +2,7 @@ import "./ProductDetails.css";
 
 const ProductDetails = () => {
   return (
-    <div>ProductDetails</div>
+    <div className="container">ProductDetails</div>
   )
 }
 
