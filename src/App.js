@@ -36,9 +36,9 @@ function App() {
         <Route path="/product-name/:id" element={<ProductDetails  />} />
         <Route path="/customer/account" element={<Account  />} />
         <Route path="/customer/account/inbox" element={<Inbox  />} />
-        <Route path="/customer/order/index" element={<Order  />} />
-        <Route path="/customer/wishlist/index" element={<SavedItems  />} />
-        <Route path="/history/?product" element={<RecentlyViewItems  />} />
+        <Route path="/customer/orders/index" element={<Order  />} />
+        <Route path="/customer/wishlists/index" element={<SavedItems  />} />
+        <Route path="/history" element={<RecentlyViewItems  />} />
       </Routes>
     </BrowserRouter>
   );

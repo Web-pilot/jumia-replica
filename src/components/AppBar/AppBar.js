@@ -41,8 +41,8 @@ export const AppBar = () => {
                 <hr style={{marginTop: "1rem"}}/>
                 <ul>
                   <li><Link to="/customer/account/"><MdPerson /> My Account </Link></li>
-                  <li><Link to="/customer/orders/"><VscPackage /> Orders </Link></li>
-                  <li><Link to="/customer/orders/"><AiOutlineHeart /> Saved Items </Link></li>
+                  <li><Link to="/customer/orders/index"><VscPackage /> Orders </Link></li>
+                  <li><Link to="/customer/wishlists/index"><AiOutlineHeart /> Saved Items </Link></li>
                 </ul>
               </div>}
             </div>

@@ -7,7 +7,7 @@ const Cart = () => {
   return (
     <section className="container ">
       <div className="cart_container">
-        {!cart ? <NoCart /> : "There's item"}
+        {cart.length ? <NoCart /> : "There's item"}
       </div>
       
     </section>

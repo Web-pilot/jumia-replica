@@ -17,7 +17,7 @@ const AccountSidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/customer/order/index">
+          <Link to="/customer/orders/index">
             <i>
               <VscPackage />
             </i>{" "}
@@ -33,7 +33,7 @@ const AccountSidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/customer/wishlist/index">
+          <Link to="/customer/wishlists/index">
             <i>
               <BsHeart />
             </i>{" "}
@@ -41,7 +41,7 @@ const AccountSidebar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/history/?product=1">
+          <Link to="/history/?1">
             <i>
               <BiRevision />
             </i>{" "}
